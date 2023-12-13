@@ -16,18 +16,19 @@ namespace E_commerce.Controllers
         // GET: ProductController
         public IActionResult Index()
         {
-            var products = _context.GetAllProductsByCategory(100, 4);
+            var products = _context.GetAllProductsByCategory(30, 4);
             return View(products);
         }
 
         // GET: ProductController/Details/5
-        public IActionResult Details(int id)
+        public IActionResult ProductDetails(int id)
         {
             //var product = _context.Products.FirstOrDefault(p => p.Id == id);
             //if (product == null)
             //{
             //    return NotFound();
             //}
+
             return View();
         }
 
